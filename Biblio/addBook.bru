@@ -1,0 +1,18 @@
+meta {
+  name: addBook
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080/book
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Le seigneur des anneaux: Les deux tours.",
+    "author": "J.R.R Tolkien"
+  }
+}

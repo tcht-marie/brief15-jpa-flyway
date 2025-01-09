@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: brief15spring
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:biblio
+    username: ma
+    password:
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  flyway:
+    enabled: true
+    validate-on-migrate: true
+    locations: db/migration
+    baseline-on-migrate: true
