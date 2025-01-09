@@ -34,5 +34,9 @@ public class Borrower {
         return id;
     }
 
+    public void setBooks(List<Book> books) {
+        this.books = books;
+    }
+
     public Borrower(){}
 }
